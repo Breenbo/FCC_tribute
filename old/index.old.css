@@ -1,0 +1,34 @@
+.cadre-box{
+    background-color: #c94c4c;
+    margin  : 2% 1%;
+    padding : 3%;
+}
+.fond-box{
+    background-color : #deeaee;
+    margin  : 3% 0%;
+    padding : 2%;
+}
+.annee{
+    font-weight : bold;
+    font-size   : 24px;
+    text-align  : center;
+    color       : black;
+}
+p{
+    font-size   : 16px;
+    font-weight : normal;
+    text-align  : left;
+}
+.foot{
+    font-size   : 14px;
+    font-weight : normal;
+    text-align  : center;
+}
+.image{
+    width : 250px;
+    height: 250px;
+}
+a:link    {color:#000066; background-color:transparent; text-decoration:none}
+a:visited {color:#000066; background-color:transparent; text-decoration:line-through}
+a:hover   {color:red; background-color:transparent; text-decoration:underline}
+a:active  {color:yellow; background-color:transparent; text-decoration:underline}
