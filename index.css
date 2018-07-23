@@ -7,17 +7,17 @@ body {
 }
 main {
     width:99vw;
-    height:98vh;
+    /* height:98vh; */
     display:grid;
-    grid-template-rows:3fr 8fr 1fr;
-    grid-template-rows:18vh 68vh 9vh;
+    grid-template-rows:10vw 33vw 5vw;
     grid-template-columns:repeat(4, 24vw);
-    grid-gap:2vh;
+    grid-gap:1vw;
     grid-template-areas:
     "header header header header"
     "geek drive colonize mars"
     "footer footer footer footer";
     background-color: lightgray;
+    /* overflow:hidden; */
 }
 a {
     color:blue;
@@ -81,15 +81,17 @@ header > h2 {
     color:hsl(0,100%,45%);
     margin-left:2vw;
     font-size: 2vw;
-    margin-top:3vh;
+    margin-top:1vw;
 }
 .text_wrapper {
     position:absolute;
-    /* overflow:scroll; */
-    height:63vh;
+    height:28vw;
     width:22vw;
     text-align: justify;
     margin:0 1vw;
+}
+p {
+    font-size: 0.85vw;
 }
 .screen {
     position:relative;
@@ -104,7 +106,7 @@ header > h2 {
     position:absolute;
     top:5%;
     width:100%;
-    height:49vh;
+    height:24vw;
     transform:skewY(15deg);
     transition-duration: 1.5s;
     display:grid;
@@ -112,7 +114,7 @@ header > h2 {
     grid-template-rows: repeat(4, 25%);
     align-items: center;
     justify-items: center;
-    grid-row-gap: 2vh;
+    grid-row-gap: 1vw;
 }
 .up {
     top:-6%;
@@ -132,7 +134,7 @@ img {
 }
 #zip {
     width:auto;
-    height:20vh;
+    height:10vw;
 }
 #tesla {
     grid-area : 1/1/3/1;
@@ -146,10 +148,25 @@ img {
     height:auto;
 }
 footer {
-    background-color: hsl(260,100%,80%);
+    background-color: hsl(260,50%,80%);
     grid-area:footer;
-    z-index:2;
+    z-index:15;
+    display:grid;
+    grid-template-columns:1fr repeat(3, 6vw);
+    align-items:center;
+    justify-items:center;
 }
+svg {
+    width:5vw;
+    height:auto;
+}
+#wiki_logo {
+    border:solid 1px black;
+    display:inline-block;
+    height:5vw;
+    width:5vw;
+}
+
 
 @media (max-width:900px) {
     main {
