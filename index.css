@@ -9,7 +9,7 @@ main {
     width:99vw;
     min-height:98vh;
     display:grid;
-    grid-template-rows:10vw 34vw 5vw;
+    grid-template-rows:10vw 40vw 5vw;
     grid-template-columns:repeat(4, 24vw);
     grid-gap:1vw;
     grid-template-areas:
@@ -92,6 +92,7 @@ header > h2 {
 }
 p {
     font-size: 0.85vw;
+    font-size: 1vw;
 }
 .screen {
     position:relative;
