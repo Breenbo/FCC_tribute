@@ -7,8 +7,9 @@ body {
 }
 main {
     width:99vw;
+    min-height:98vh;
     display:grid;
-    grid-template-rows:10vw 33vw 5vw;
+    grid-template-rows:10vw 34vw 5vw;
     grid-template-columns:repeat(4, 24vw);
     grid-gap:1vw;
     grid-template-areas:
@@ -167,6 +168,37 @@ svg {
 }
 
 
+@media (max-width:900px) {
+    main {
+    grid-template-rows:10vw 27vw 27vw 5vw;
+    grid-template-columns:repeat(2, 48vw);
+    grid-gap:1vw;
+    grid-template-areas:
+    "header header"
+    "geek drive"
+    "colonize mars"
+    "footer footer";
+    }
+    .text_wrapper {
+        width:46vw;
+    }
+    p {
+        font-size: 1vw;
+    }
+    .screen {
+        top:-20%;
+    }
+    .up {
+        top:-20%;
+    }
+    .down {
+        top:80%;
+    }
+    .cover_screen {
+        top:10%;
+        height:20vw;
+    }
+}
 /* @media (max-width:900px) { */
     /* main { */
         /* grid-template-columns:1fr; */
