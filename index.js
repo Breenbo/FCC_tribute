@@ -12,6 +12,11 @@ for (const card of cards) {
     document.getElementById(screenName).classList.add('up')
     document.getElementById(screenName).classList.remove('down')
   })
+  // add support for touch screens on click
+  card.addEventListener('click', function () {
+    document.getElementById(screenName).classList.toggle('up')
+    document.getElementById(screenName).classList.toggle('down')
+  })
 }
 
 // set change colors of logos on hover
@@ -21,11 +26,11 @@ for (const logo of logos) {
   let backName = logoName + '_back'
   let drawName = logoName + '_draw'
   logo.addEventListener('mouseenter', function () {
-    logo.children[backName].setAttribute('fill','hsl(260,100%,60%)')
+    logo.children[backName].setAttribute('fill', 'hsl(260,100%,60%)')
     logo.children[drawName].setAttribute('fill', 'hsl(260,50%,90%)')
   })
   logo.addEventListener('mouseleave', function () {
-    logo.children[backName].setAttribute('fill','hsl(260,50%,90%)')
+    logo.children[backName].setAttribute('fill', 'hsl(260,50%,90%)')
     logo.children[drawName].setAttribute('fill', 'hsl(260,100%,60%)')
   })
 }

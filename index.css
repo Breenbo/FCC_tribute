@@ -7,7 +7,6 @@ body {
 }
 main {
     width:99vw;
-    /* height:98vh; */
     display:grid;
     grid-template-rows:10vw 33vw 5vw;
     grid-template-columns:repeat(4, 24vw);
@@ -17,7 +16,6 @@ main {
     "geek drive colonize mars"
     "footer footer footer footer";
     background-color: lightgray;
-    /* overflow:hidden; */
 }
 a {
     color:blue;
@@ -25,14 +23,14 @@ a {
     text-decoration:none;
 }
 a:hover {
-    color:darkgreen;
+    color:hsl(0,100%,45%);
 }
 header {
     background-color: hsl(0,0%,100%);
     grid-area:header;
     box-shadow : 0 10px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.19);
     background-image: url(img/musk2.jpg);
-    background-position: 175% 30%;
+    background-position: 1000% 30%;
     background-size: auto 900%;
     background-repeat: no-repeat;
 }
@@ -40,6 +38,7 @@ header > h1 {
     font-family:tesla;
     font-size: 5vw;
     margin:0 2vw;
+    color:hsl(0,100%,45%);
 }
 header > h2 {
     font-size: 2vw;
@@ -168,26 +167,26 @@ svg {
 }
 
 
-@media (max-width:900px) {
-    main {
-        grid-template-columns:1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "header"
-        "geek"
-        "drive"
-        "colonize"
-        "mars"
-        "footer";
-    }
-    header {
-        background-position: 25% 30%;
-        background-size: auto 900%;
-        /* background-size: auto 200%; */
-        background-repeat: no-repeat;
-    }
-    .screen {
-        /* display:none; */
-        transform:skewX(-15deg);
-    }
-}
+/* @media (max-width:900px) { */
+    /* main { */
+        /* grid-template-columns:1fr; */
+        /* grid-template-rows: 1fr; */
+        /* grid-template-areas: */
+        /* "header" */
+        /* "geek" */
+        /* "drive" */
+        /* "colonize" */
+        /* "mars" */
+        /* "footer"; */
+    /* } */
+    /* header { */
+        /* background-position: 25% 30%; */
+        /* background-size: auto 900%; */
+        /* [> background-size: auto 200%; <] */
+        /* background-repeat: no-repeat; */
+    /* } */
+    /* .screen { */
+        /* [> display:none; <] */
+        /* transform:skewX(-15deg); */
+    /* } */
+/* } */
