@@ -9,7 +9,7 @@ main {
     width:99vw;
     min-height:98vh;
     display:grid;
-    grid-template-rows:20vw 40vw 10vw;
+    grid-template-rows:20vw 42vw 10vw;
     grid-template-columns:repeat(4, 24vw);
     grid-gap:1vw;
     grid-template-areas:
@@ -47,6 +47,9 @@ header > h2 {
     font-size: 2vw;
     margin-top:0;
     margin-left : 4vw;
+}
+#small {
+    display:none;
 }
 #geek {
     grid-area:geek;
@@ -169,11 +172,15 @@ svg {
     height:5vw;
     width:5vw;
 }
+#wiki {
+    justify-self:start;
+    font-size: 3vw;
+}
 
 
 @media (max-width:900px) {
     main {
-        grid-template-rows:20vw 50vw 50vw 10vw;
+        grid-template-rows:20vw 52vw 52vw 10vw;
         grid-template-columns:repeat(2, 48vw);
         grid-gap:1vw;
         grid-template-areas:
@@ -181,6 +188,12 @@ svg {
         "geek drive"
         "colonize mars"
         "footer footer";
+    }
+    header > h2 {
+        font-size: 3vw;
+    }
+    #small {
+        display:block;
     }
     .text_wrapper {
         width:46vw;
@@ -214,7 +227,7 @@ svg {
 
 @media (max-width:600px) {
     main {
-        grid-template-rows:20vw repeat(4, 70vw) 20vw;
+        grid-template-rows:20vw repeat(4, 75vw) 20vw;
         grid-template-columns:1fr;
         grid-gap:1vw;
         grid-template-areas:
@@ -229,10 +242,14 @@ svg {
         font-size: 7vw;
     }
     header > h2 {
-        font-size: 2vw;
+        font-size: 3.5vw;
+    }
+    #small {
+        display:block;
     }
     .card > h1 {
         font-size: 6vw;
+        margin-top:2vw;
     }
     .text_wrapper {
         width:90vw;
@@ -253,7 +270,10 @@ svg {
     }
     .cover_screen {
         top:10%;
-        height:50vw;
+        height:58vw;
+    }
+    #zip {
+        height:20vw;
     }
     svg {
         width:12vw;
