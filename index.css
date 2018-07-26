@@ -39,12 +39,12 @@ header {
 }
 header > h1 {
     font-family:tesla;
-    font-size: 5vw;
+    font-size: 6vw;
     margin:0 2vw;
     color:hsl(0,100%,45%);
 }
 header > h2 {
-    font-size: 2vw;
+    font-size: 4vw;
     margin-top:0;
     margin-left : 4vw;
 }
@@ -64,16 +64,24 @@ header > h2 {
     grid-area:mars;
 }
 #geek_screen {
-    background-color:hsl(60,80%,80%);
+    /* background-color:hsl(60,80%,80%); */
+    /* background-color: hsl(348, 82%, 35%); */
+    border-top:solid 20px hsl(348, 82%, 35%);
 }
 #drive_screen {
-    background-color: hsl(180,50%,80%);
+    /* background-color: hsl(180,50%,80%); */
+    /* background-color: hsl(220, 63%, 17%); */
+    border-top:solid 20px hsl(220, 63%, 17%);
 }
 #live_screen {
-    background-color: hsl(120,50%,80%);
+    /* background-color: hsl(120,50%,80%); */
+    /* background-color: hsl(60, 0%, 58%); */
+    border-top:solid 20px hsl(60, 0%, 58%);
 }
 #mars_screen {
-    background-color: hsl(0,100%,90%);
+    /* background-color: hsl(0,100%,90%); */
+    /* background-color: hsl(195, 8%, 20%); */
+    border-top:solid 20px hsl(195, 8%, 20%);
 }
 .card {
     z-index: 10;
@@ -101,18 +109,19 @@ p {
 }
 .screen {
     position:relative;
-    top:-6%;
+    top:-1.6vw;
     height:130%;
     transform:skewY(-15deg);
     overflow: hidden;
     transition-duration:1.5s;
+    background-color: #fff;
 }
 .cover_screen {
     content:"";
     position:absolute;
     top:5%;
     width:100%;
-    height:24vw;
+    height:28vw;
     transform:skewY(15deg);
     transition-duration: 1.5s;
     display:grid;
@@ -123,7 +132,7 @@ p {
     grid-row-gap: 1vw;
 }
 .up {
-    top:-6%;
+    top:-1.6vw;
     opacity:1;
 }
 .down {
@@ -140,10 +149,30 @@ img {
 }
 #zip {
     width:auto;
-    height:10vw;
+    height:7vw;
+}
+#paypal {
+    width:auto;
+    height:4.5vw;
+    margin-top:-20px;
+}
+#openai {
+    width:auto;
+    height:8vw;
+    margin-top:-20px;
+}
+#neuralink {
+    width:auto;
+    height:7vw;
 }
 #tesla {
     grid-area : 1/1/3/1;
+    width:auto;
+    height:12vw;
+}
+#hyperloop {
+    width:auto;
+    height:2.5vw;
 }
 #solar {
     grid-area : 1/1/5/1;
@@ -158,12 +187,12 @@ footer {
     grid-area:footer;
     z-index:15;
     display:grid;
-    grid-template-columns:1fr repeat(3, 6vw);
+    grid-template-columns:1fr repeat(3, 10vw);
     align-items:center;
     justify-items:center;
 }
-svg {
-    width:5vw;
+.logo {
+    width:8vw;
     height:auto;
 }
 #wiki_logo {
