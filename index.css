@@ -109,17 +109,22 @@ header > h2 {
     text-align: justify;
     margin:0 1vw;
 }
+.text_wrapper > p:first-letter {
+    font-size: 1.5em;
+}
 p {
-    font-size: 0.85vw;
     font-size: 1vw;
+    margin-top:0;
+    margin-bottom:0;
+    margin:0 1vw;
 }
 .screen {
     position:relative;
-    top:-1.6vw;
+    top:-5%;
     height:130%;
-    transform:skewY(-15deg);
+    transform:skewY(-13deg);
     overflow: hidden;
-    transition-duration:1.5s;
+    transition-duration:1s;
     background-color: var(--headerBackgound);
 }
 .cover_screen {
@@ -128,7 +133,7 @@ p {
     top:5%;
     width:100%;
     height:28vw;
-    transform:skewY(15deg);
+    transform:skewY(13deg);
     transition-duration: 1.5s;
     display:grid;
     grid-template-columns: auto;
@@ -138,7 +143,7 @@ p {
     grid-row-gap: 1vw;
 }
 .up {
-    top:-1.6vw;
+    top:-5%;
     opacity:1;
 }
 .down {
@@ -242,25 +247,32 @@ footer {
     }
     p {
         font-size: 1.5vw;
+        margin:0 2vw;
     }
     .screen {
-        top:-8%;
+        top:-9%;
     }
     .up {
-        top:-8%;
+        top:-9%;
     }
     .down {
         top:80%;
     }
     .cover_screen {
-        top:10%;
-        height:35vw;
-    }
-    svg {
-        width:8vw;
+        top:5%;
+        height:36vw;
     }
     .card > h1 {
         font-size: 4vw;
+    }
+    #openai {
+        height:10vw;
+    }
+    #neuralink {
+        height:10vw;
+    }
+    #tesla {
+        height:15vw;
     }
     footer {
         grid-template-columns: 1fr repeat(3, 10vw);
@@ -307,12 +319,13 @@ footer {
     }
     p {
         font-size: 4vw;
+        margin:0 3vw;
     }
     .screen {
-        top:-5%;
+        top:-6%;
     }
     .up {
-        top:-5%;
+        top:-6%;
     }
     .down {
         top:80%;
@@ -342,16 +355,16 @@ footer {
     #paypal {
         width:auto;
         height:16vw;
-        margin-top:20px;
+        margin-top:15px;
     }
     #openai {
         width:auto;
-        height:24vw;
-        margin-top:10px;
+        height:26vw;
+        margin-top:5px;
     }
     #neuralink {
         width:auto;
-        height:22vw;
+        height:25vw;
     }
     #tesla {
         grid-area : 1/1/3/1;
