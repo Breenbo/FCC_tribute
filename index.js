@@ -14,6 +14,11 @@ for (const card of cards) {
   })
   // add support for touch screens on click
   card.addEventListener('click', function () {
+    var screens = document.getElementsByClassName("screen")
+      for (const screen of screens) {
+          screen.classList.add('up')
+          screen.classList.remove('down')
+      }
     document.getElementById(screenName).classList.toggle('up')
     document.getElementById(screenName).classList.toggle('down')
   })
