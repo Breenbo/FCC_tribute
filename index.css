@@ -1,6 +1,8 @@
 :root{
+    --bodyBackgroundColor : hsl(0,0%,95%);
+    --textColor : hsl(0,0%,30%);
     --headerBackgound : hsl(0,0%,100%);
-    --headerH1 : hsl(0,100%,45%);
+    --headerH1 : hsl(0,80%,52%);
     --geekBorder : hsl(348,82%,35%);
     --driveBorder : hsl(220,63%,17%);
     --liveBorder : hsl(60,0%,58%);
@@ -8,6 +10,8 @@
     --cardBackground : hsl(0,0%,98%);
     --footerBackground : hsl(260,50%,80%);
     --footerLogo : hsl(260,100%,60%);
+    --aColor : hsl(240,100%,65%);
+    --aHoverColor : hsl(0,100%,55%);
 }
 
 @font-face {
@@ -16,6 +20,8 @@
 }
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color:var(--textColor);
 }
 main {
     width:99vw;
@@ -28,15 +34,15 @@ main {
     "header header header header"
     "geek drive colonize mars"
     "footer footer footer footer";
-    background-color: lightgray;
+    background-color: var(--bodyBackgroundColor);
 }
 a {
-    color:blue;
+    color:var(--driveBorder);
     font-weight: bold;
     text-decoration:none;
 }
 a:hover {
-    color:hsl(0,100%,45%);
+    color:var(--geekBorder);
 }
 header {
     background-color: var(--headerBackgound);
@@ -57,6 +63,7 @@ header > h2 {
     font-size: 4vw;
     margin-top:0;
     margin-left : 4vw;
+    font-style:italic;
 }
 #small {
     display:none;
@@ -113,8 +120,8 @@ header > h2 {
     font-weight: bold;
 }
 p {
-    font-size: 1vw;
-    margin:4px 1vw;
+    font-size: 1.04vw;
+    margin:1vw;
 }
 .screen {
     position:relative;
@@ -204,15 +211,9 @@ footer {
     width:8vw;
     height:auto;
 }
-#wiki_logo {
-    border:solid 1px black;
-    display:inline-block;
-    height:5vw;
-    width:5vw;
-}
 #wiki {
     justify-self:start;
-    font-size: 1vw;
+    font-size: 1.5vw;
     margin-left:2vw;
 }
 #wiki > a {
@@ -245,7 +246,7 @@ footer {
     }
     p {
         font-size: 1.5vw;
-        margin:0 2vw;
+        margin:2vw;
     }
     .screen {
         top:-9%;
@@ -317,7 +318,7 @@ footer {
     }
     p {
         font-size: 4vw;
-        margin:0 3vw;
+        margin:3vw;
     }
     .screen {
         top:-6%;
