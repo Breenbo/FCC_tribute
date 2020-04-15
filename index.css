@@ -1,383 +1,384 @@
-:root{
-    --bodyBackgroundColor : hsl(0,0%,95%);
-    --textColor : hsl(0,0%,30%);
-    --headerBackgound : hsl(0,0%,100%);
-    --headerH1 : hsl(0,80%,52%);
-    --geekBorder : hsl(348,82%,35%);
-    --driveBorder : hsl(220,63%,17%);
-    --liveBorder : hsl(60,0%,58%);
-    --marsBorder : hsl(195,8%,20%);
-    --cardBackground : hsl(0,0%,98%);
-    --footerBackground : hsl(260,50%,80%);
-    --footerLogo : hsl(260,100%,60%);
-    --aColor : hsl(240,100%,65%);
-    --aHoverColor : hsl(0,100%,55%);
+:root {
+  --bodyBackgroundColor: hsl(0, 0%, 93%);
+  --textColor: hsl(0, 0%, 30%);
+  --headerBackgound: hsl(0, 0%, 100%);
+  --headerH1: hsl(0, 80%, 52%);
+  --geekBorder: hsl(348, 82%, 35%);
+  --driveBorder: hsl(220, 63%, 17%);
+  --liveBorder: hsl(60, 0%, 58%);
+  --marsBorder: hsl(195, 8%, 20%);
+  --cardBackground: hsl(0, 0%, 98%);
+  --footerBackground: hsl(260, 50%, 80%);
+  --footerLogo: hsl(260, 100%, 60%);
+  --aColor: hsl(240, 100%, 65%);
+  --aHoverColor: hsl(0, 100%, 55%);
 }
 
 @font-face {
-    font-family: tesla;
-    src: url(font/TESLA.ttf);
+  font-family: tesla;
+  src: url(font/TESLA.ttf);
 }
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-family: 'Roboto', sans-serif;
-    color:var(--textColor);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: var(--textColor);
 }
 main {
-    width:99vw;
-    min-height:98vh;
-    display:grid;
-    grid-template-rows:20vw 42vw 10vw;
-    grid-template-columns:repeat(4, 24vw);
-    grid-gap:1vw;
-    grid-template-areas:
+  width: 99vw;
+  min-height: 98vh;
+  display: grid;
+  grid-template-rows: 20vw 42vw 10vw;
+  grid-template-columns: repeat(4, 24vw);
+  grid-gap: 1vw;
+  grid-row-gap: 40px;
+  grid-template-areas:
     "header header header header"
     "geek drive colonize mars"
     "footer footer footer footer";
-    background-color: var(--bodyBackgroundColor);
+  background-color: var(--bodyBackgroundColor);
 }
 a {
-    color:var(--driveBorder);
-    font-weight: bold;
-    text-decoration:none;
+  color: var(--driveBorder);
+  font-weight: bold;
+  text-decoration: none;
 }
 a:hover {
-    color:var(--geekBorder);
+  color: var(--geekBorder);
 }
 header {
-    background-color: var(--headerBackgound);
-    grid-area:header;
-    box-shadow : 0 10px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.19);
-    background-image: url(img/musk2.jpg);
-    background-position: -200% 30%;
-    background-size: auto 500%;
-    background-repeat: no-repeat;
+  background-color: var(--headerBackgound);
+  grid-area: header;
+  /*box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.19);*/
+  background-image: url(img/musk2.jpg);
+  background-position: -200% 30%;
+  background-size: auto 500%;
+  background-repeat: no-repeat;
 }
 header > h1 {
-    font-family:tesla;
-    font-size: 6vw;
-    margin:0 2vw;
-    color:var(--headerH1);
+  font-family: tesla;
+  font-size: 6vw;
+  margin: 0 2vw;
+  color: var(--headerH1);
 }
 header > h2 {
-    font-size: 4vw;
-    margin-top:0;
-    margin-left : 4vw;
-    font-style:italic;
+  font-size: 4vw;
+  margin-top: 0;
+  margin-left: 4vw;
+  font-style: italic;
 }
 #small {
-    display:none;
+  display: none;
 }
 #geek {
-    grid-area:geek;
+  grid-area: geek;
 }
 #drive {
-    grid-area:drive;
+  grid-area: drive;
 }
 #live {
-    grid-area:colonize;
+  grid-area: colonize;
 }
 #mars {
-    grid-area:mars;
+  grid-area: mars;
 }
 #geek_screen {
-    /* border-top:solid 20px hsl(348, 82%, 35%); */
-    border-top:solid 20px var(--geekBorder);
+  /* border-top:solid 20px hsl(348, 82%, 35%); */
+  border-top: solid 20px var(--geekBorder);
 }
 #drive_screen {
-    /* border-top:solid 20px hsl(220, 63%, 17%); */
-    border-top:solid 20px var(--driveBorder);
+  /* border-top:solid 20px hsl(220, 63%, 17%); */
+  border-top: solid 20px var(--driveBorder);
 }
 #live_screen {
-    /* border-top:solid 20px hsl(60, 0%, 58%); */
-    border-top:solid 20px var(--liveBorder);
+  /* border-top:solid 20px hsl(60, 0%, 58%); */
+  border-top: solid 20px var(--liveBorder);
 }
 #mars_screen {
-    /* border-top:solid 20px hsl(195, 8%, 20%); */
-    border-top:solid 20px var(--marsBorder);
+  /* border-top:solid 20px hsl(195, 8%, 20%); */
+  border-top: solid 20px var(--marsBorder);
 }
 .card {
-    z-index: 10;
-    overflow:hidden;
-    background-color: var(--cardBackground);
-    box-shadow : 0 10px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.19);
+  z-index: 10;
+  overflow: hidden;
+  background-color: var(--cardBackground);
+  /*box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.19);*/
 }
 .card > h1 {
-    font-family:tesla;
-    color:var(--headerH1);
-    margin-left:2vw;
-    font-size: 3vw;
-    margin-top:1vw;
+  font-family: tesla;
+  color: var(--headerH1);
+  margin-left: 2vw;
+  font-size: 3vw;
+  margin-top: 1vw;
 }
 .text_wrapper {
-    position:absolute;
-    height:26vw;
-    width:22vw;
-    text-align: justify;
-    margin:0 1vw;
+  position: absolute;
+  height: 26vw;
+  width: 22vw;
+  text-align: justify;
+  margin: 0 1vw;
 }
 .text_wrapper > p:first-letter {
-    font-weight: bold;
+  font-weight: bold;
 }
 p {
-    font-size: 1.04vw;
-    margin:1vw;
+  font-size: 1.04vw;
+  margin: 1vw;
 }
 .screen {
-    position:relative;
-    top:-5%;
-    height:130%;
-    transform:skewY(-13deg);
-    overflow: hidden;
-    transition-duration:1s;
-    background-color: var(--headerBackgound);
+  position: relative;
+  top: -5%;
+  height: 130%;
+  transform: skewY(-13deg);
+  overflow: hidden;
+  transition-duration: 1s;
+  background-color: var(--headerBackgound);
 }
 .cover_screen {
-    content:"";
-    position:absolute;
-    top:5%;
-    width:100%;
-    height:28vw;
-    transform:skewY(13deg);
-    transition-duration: 1.5s;
-    display:grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(4, 25%);
-    align-items: center;
-    justify-items: center;
-    grid-row-gap: 1vw;
+  content: "";
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  height: 28vw;
+  transform: skewY(13deg);
+  transition-duration: 1.5s;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, 25%);
+  align-items: center;
+  justify-items: center;
+  grid-row-gap: 1vw;
 }
 .up {
-    top:-5%;
-    opacity:1;
+  top: -5%;
+  opacity: 1;
 }
 .down {
-    top:80%;
-    opacity:0;
+  top: 80%;
+  opacity: 0;
 }
 .date {
-    font-size: 1.1em;
-    font-style:italic;
+  font-size: 1.1em;
+  font-style: italic;
 }
 img {
-    height:100%;
-    width:90%;
+  height: 100%;
+  width: 90%;
 }
 #zip {
-    width:auto;
-    height:7vw;
+  width: auto;
+  height: 7vw;
 }
 #paypal {
-    width:auto;
-    height:4.5vw;
-    margin-top:-20px;
+  width: auto;
+  height: 4.5vw;
+  margin-top: -20px;
 }
 #openai {
-    width:auto;
-    height:8vw;
-    margin-top:-20px;
+  width: auto;
+  height: 8vw;
+  margin-top: -20px;
 }
 #neuralink {
-    width:auto;
-    height:7vw;
+  width: auto;
+  height: 7vw;
 }
 #tesla {
-    grid-area : 1/1/3/1;
-    width:auto;
-    height:12vw;
+  grid-area: 1/1/3/1;
+  width: auto;
+  height: 12vw;
 }
 #hyperloop {
-    width:auto;
-    height:2.5vw;
+  width: auto;
+  height: 2.5vw;
 }
 #solar {
-    grid-area : 1/1/5/1;
-    height:auto;
+  grid-area: 1/1/5/1;
+  height: auto;
 }
 #spacex {
-    grid-area : 1/1/5/1;
-    height:auto;
+  grid-area: 1/1/5/1;
+  height: auto;
 }
 footer {
-    background-color: var(--footerBackground);
-    grid-area:footer;
-    z-index:15;
-    display:grid;
-    grid-template-columns:1fr repeat(3, 10vw);
-    align-items:center;
-    justify-items:center;
+  background-color: var(--footerBackground);
+  grid-area: footer;
+  z-index: 15;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 10vw);
+  align-items: center;
+  justify-items: center;
 }
 .logo {
-    width:8vw;
-    height:auto;
+  width: 8vw;
+  height: auto;
 }
 #wiki {
-    justify-self:start;
-    font-size: 1.5vw;
-    margin-left:2vw;
+  justify-self: start;
+  font-size: 1.5vw;
+  margin-left: 2vw;
 }
 #wiki > a {
-    color:var(--footerLogo);
+  color: var(--footerLogo);
 }
 #wiki > a:hover {
-    color:red;
+  color: red;
 }
 
-
-@media (max-width:900px) {
-    main {
-        grid-template-rows:20vw 52vw 52vw 10vw;
-        grid-template-columns:repeat(2, 48vw);
-        grid-gap:1vw;
-        grid-template-areas:
-        "header header"
-        "geek drive"
-        "colonize mars"
-        "footer footer";
-    }
-    header > h2 {
-        font-size: 3vw;
-    }
-    #small {
-        display:block;
-    }
-    .text_wrapper {
-        width:46vw;
-    }
-    p {
-        font-size: 1.5vw;
-        margin:2vw;
-    }
-    .screen {
-        top:-9%;
-    }
-    .up {
-        top:-9%;
-    }
-    .down {
-        top:80%;
-    }
-    .cover_screen {
-        top:5%;
-        height:36vw;
-    }
-    .card > h1 {
-        font-size: 4vw;
-    }
-    #openai {
-        height:10vw;
-    }
-    #neuralink {
-        height:10vw;
-    }
-    #tesla {
-        height:15vw;
-    }
-    footer {
-        grid-template-columns: 1fr repeat(3, 10vw);
-    }
-    #wiki {
-        font-size: 2vw;
-    }
+@media (max-width: 900px) {
+  main {
+    grid-template-rows: 20vw 52vw 52vw 10vw;
+    grid-template-columns: repeat(2, 48vw);
+    grid-gap: 1vw;
+    grid-template-areas:
+      "header header"
+      "geek drive"
+      "colonize mars"
+      "footer footer";
+  }
+  header > h2 {
+    font-size: 3vw;
+  }
+  #small {
+    display: block;
+  }
+  .text_wrapper {
+    width: 46vw;
+  }
+  p {
+    font-size: 1.5vw;
+    margin: 2vw;
+  }
+  .screen {
+    top: -9%;
+  }
+  .up {
+    top: -9%;
+  }
+  .down {
+    top: 80%;
+  }
+  .cover_screen {
+    top: 5%;
+    height: 36vw;
+  }
+  .card > h1 {
+    font-size: 4vw;
+  }
+  #openai {
+    height: 10vw;
+  }
+  #neuralink {
+    height: 10vw;
+  }
+  #tesla {
+    height: 15vw;
+  }
+  footer {
+    grid-template-columns: 1fr repeat(3, 10vw);
+  }
+  #wiki {
+    font-size: 2vw;
+  }
 }
 
-@media (max-width:600px) {
-    main {
-        grid-template-rows:40vw repeat(4, 155vw) 20vw;
-        grid-template-columns:1fr;
-        grid-gap:1vw;
-        grid-template-areas:
-        "header"
-        "geek"
-        "drive"
-        "colonize"
-        "mars"
-        "footer";
-    }
-    header {
-        background-position: 0% 30%;
-        background-size: auto 500%;
-    }
-    header > h1 {
-        font-size: 8vw;
-    }
-    header > h2 {
-        font-size: 5vw;
-    }
-    #small {
-        display:block;
-    }
-    .card > h1 {
-        font-size: 8vw;
-        margin-top:5vw;
-    }
-    .text_wrapper {
-        width:90vw;
-        height:80vw;
-        margin-left:2vw;
-    }
-    p {
-        font-size: 4vw;
-        margin:3vw;
-    }
-    .screen {
-        top:-6%;
-    }
-    .up {
-        top:-6%;
-    }
-    .down {
-        top:80%;
-    }
-    .cover_screen {
-        top:5%;
-        height:120vw;
-    }
-    #zip {
-        height:20vw;
-    }
-    footer {
-        grid-template-columns: 1fr repeat(3, 15vw);
-        grid-column-gap:2vw;
-    }
-    .logo {
-        width:15vw;
-        height:auto;
-    }
-    #wiki {
-        font-size: 4vw;
-    }
-    #zip {
-        width:auto;
-        height:25vw;
-    }
-    #paypal {
-        width:auto;
-        height:16vw;
-        margin-top:15px;
-    }
-    #openai {
-        width:auto;
-        height:26vw;
-        margin-top:5px;
-    }
-    #neuralink {
-        width:auto;
-        height:25vw;
-    }
-    #tesla {
-        grid-area : 1/1/3/1;
-        width:auto;
-        height:52vw;
-    }
-    #hyperloop {
-        width:auto;
-        height:10vw;
-        margin-top:-40px;
-    }
-    #boring {
-        width:auto;
-        height:30vw;
-        margin-top:-40px;
-    }
+@media (max-width: 600px) {
+  main {
+    grid-template-rows: 40vw repeat(4, 155vw) 20vw;
+    grid-template-columns: 1fr;
+    grid-gap: 1vw;
+    grid-template-areas:
+      "header"
+      "geek"
+      "drive"
+      "colonize"
+      "mars"
+      "footer";
+  }
+  header {
+    background-position: 0% 30%;
+    background-size: auto 500%;
+  }
+  header > h1 {
+    font-size: 8vw;
+  }
+  header > h2 {
+    font-size: 5vw;
+  }
+  #small {
+    display: block;
+  }
+  .card > h1 {
+    font-size: 8vw;
+    margin-top: 5vw;
+  }
+  .text_wrapper {
+    width: 90vw;
+    height: 80vw;
+    margin-left: 2vw;
+  }
+  p {
+    font-size: 4vw;
+    margin: 3vw;
+  }
+  .screen {
+    top: -6%;
+  }
+  .up {
+    top: -6%;
+  }
+  .down {
+    top: 80%;
+  }
+  .cover_screen {
+    top: 5%;
+    height: 120vw;
+  }
+  #zip {
+    height: 20vw;
+  }
+  footer {
+    grid-template-columns: 1fr repeat(3, 15vw);
+    grid-column-gap: 2vw;
+  }
+  .logo {
+    width: 15vw;
+    height: auto;
+  }
+  #wiki {
+    font-size: 4vw;
+  }
+  #zip {
+    width: auto;
+    height: 25vw;
+  }
+  #paypal {
+    width: auto;
+    height: 16vw;
+    margin-top: 15px;
+  }
+  #openai {
+    width: auto;
+    height: 26vw;
+    margin-top: 5px;
+  }
+  #neuralink {
+    width: auto;
+    height: 25vw;
+  }
+  #tesla {
+    grid-area: 1/1/3/1;
+    width: auto;
+    height: 52vw;
+  }
+  #hyperloop {
+    width: auto;
+    height: 10vw;
+    margin-top: -40px;
+  }
+  #boring {
+    width: auto;
+    height: 30vw;
+    margin-top: -40px;
+  }
 }
